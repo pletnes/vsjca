@@ -1,0 +1,88 @@
+>Nan: plain speaker line
+#^^^ source.jefferson entity.name.tag.speaker.jefferson
+#   ^ source.jefferson punctuation.separator.speaker.jefferson
+#    ^^^^^^^^^^^^^^^^^^^^ source.jefferson
+>1   Emma:  numbered speaker line
+#^ source.jefferson constant.numeric.line-number.jefferson
+# ^^^ source.jefferson
+#    ^^^^ source.jefferson entity.name.tag.speaker.jefferson
+#        ^ source.jefferson punctuation.separator.speaker.jefferson
+#         ^^^^^^^^^^^^^^^^^^^^^^^^ source.jefferson
+>12  →   Nan:  numbered and arrowed speaker line
+#^^ source.jefferson constant.numeric.line-number.jefferson
+#  ^^ source.jefferson
+#    ^ source.jefferson keyword.control.analyst-arrow.jefferson
+#     ^^^ source.jefferson
+#        ^^^ source.jefferson entity.name.tag.speaker.jefferson
+#           ^ source.jefferson punctuation.separator.speaker.jefferson
+#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.jefferson
+>??: unknown speaker label
+#^^ source.jefferson entity.name.tag.speaker.jefferson
+#  ^ source.jefferson punctuation.separator.speaker.jefferson
+#   ^^^^^^^^^^^^^^^^^^^^^^^ source.jefferson
+>(.)
+#^^^ source.jefferson constant.language.pause.micro.jefferson
+>(0.7)
+#^^^^^ source.jefferson constant.numeric.pause.timed.jefferson
+>(2)
+#^^^ source.jefferson constant.numeric.pause.timed.jefferson
+>(15.0)
+#^^^^^^ source.jefferson constant.numeric.pause.timed.jefferson
+>(h)
+#^^^ source.jefferson constant.language.laughter.jefferson
+>(hhh)
+#^^^^^ source.jefferson constant.language.laughter.jefferson
+>(   )
+#^^^^^ source.jefferson comment.block.unclear.jefferson
+>((phone rings))
+#^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.begin.jefferson
+#  ^^^^^^^^^^^ source.jefferson comment.block.analyst.jefferson
+#             ^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.end.jefferson
+>((comment containing (0.7) and = and [ which must stay comment))
+#^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.begin.jefferson
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.jefferson comment.block.analyst.jefferson
+#                                                              ^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.end.jefferson
+>((first)) then ((second))
+#^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.begin.jefferson
+#  ^^^^^ source.jefferson comment.block.analyst.jefferson
+#       ^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.end.jefferson
+#         ^^^^^^ source.jefferson
+#               ^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.begin.jefferson
+#                 ^^^^^^ source.jefferson comment.block.analyst.jefferson
+#                       ^^ source.jefferson comment.block.analyst.jefferson punctuation.definition.comment.end.jefferson
+>7       (2.8)
+#^ source.jefferson constant.numeric.line-number.jefferson
+# ^^^^^^^ source.jefferson
+#        ^^^^^ source.jefferson constant.numeric.pause.timed.jefferson
+>→       (0.7)
+#^ source.jefferson keyword.control.analyst-arrow.jefferson
+# ^^^^^^^ source.jefferson
+#        ^^^^^ source.jefferson constant.numeric.pause.timed.jefferson
+>Nan:  it wz (.) quite the thi(h)ng=
+#^^^ source.jefferson entity.name.tag.speaker.jefferson
+#   ^ source.jefferson punctuation.separator.speaker.jefferson
+#    ^^^^^^^^ source.jefferson
+#            ^^^ source.jefferson constant.language.pause.micro.jefferson
+#               ^^^^^^^^^^^^^^ source.jefferson
+#                             ^^^ source.jefferson constant.language.laughter.jefferson
+#                                ^^ source.jefferson
+#                                  ^ source.jefferson keyword.operator.latch.jefferson
+>Emma: =[yeah:
+#^^^^ source.jefferson entity.name.tag.speaker.jefferson
+#    ^ source.jefferson punctuation.separator.speaker.jefferson
+#     ^ source.jefferson
+#      ^ source.jefferson keyword.operator.latch.jefferson
+#       ^ source.jefferson punctuation.section.overlap.jefferson
+#        ^^^^^^ source.jefferson
+>Nan:   [↑we:ll↓ okay
+#^^^ source.jefferson entity.name.tag.speaker.jefferson
+#   ^ source.jefferson punctuation.separator.speaker.jefferson
+#    ^^^ source.jefferson
+#       ^ source.jefferson punctuation.section.overlap.jefferson
+#        ^ source.jefferson keyword.operator.intonation.jefferson
+#         ^^^^^ source.jefferson
+#              ^ source.jefferson keyword.operator.intonation.jefferson
+#               ^^^^^^ source.jefferson
+>no::: this line starts with a stretch not a speaker label
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.jefferson
+>

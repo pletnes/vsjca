@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Jefferson CA",
+  "scopeName": "source.jefferson",
+  "patterns": [
+    { "include": "#analyst-comment" },
+    { "include": "#timed-pause" },
+    { "include": "#micropause" },
+    { "include": "#laughter-particle" },
+    { "include": "#unclear-speech" },
+    { "include": "#speaker-line-head" },
+    { "include": "#line-number" },
+    { "include": "#overlap" },
+    { "include": "#intonation" },
+    { "include": "#analyst-arrow" },
+    { "include": "#latch" }
+  ],
+  "repository": {
+    "analyst-comment": {
+      "name": "comment.block.analyst.jefferson",
+      "match": "(\\(\\()(.*?)(\\)\\))",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.begin.jefferson" },
+        "3": { "name": "punctuation.definition.comment.end.jefferson" }
+      }
+    },
+    "timed-pause": {
+      "name": "constant.numeric.pause.timed.jefferson",
+      "match": "\\(\\d+(?:\\.\\d+)?\\)"
+    },
+    "micropause": {
+      "name": "constant.language.pause.micro.jefferson",
+      "match": "\\(\\.\\)"
+    },
+    "laughter-particle": {
+      "name": "constant.language.laughter.jefferson",
+      "match": "\\(h+\\)"
+    },
+    "unclear-speech": {
+      "name": "comment.block.unclear.jefferson",
+      "match": "\\( +\\)"
+    },
+    "speaker-line-head": {
+      "match": "^[ \\t]*(?:(\\d+)[ \\t]+)?(?:(→|->)[ \\t]+)?([^\\s:]+)(:)(?=[ \\t]|$)",
+      "captures": {
+        "1": { "name": "constant.numeric.line-number.jefferson" },
+        "2": { "name": "keyword.control.analyst-arrow.jefferson" },
+        "3": { "name": "entity.name.tag.speaker.jefferson" },
+        "4": { "name": "punctuation.separator.speaker.jefferson" }
+      }
+    },
+    "line-number": {
+      "match": "^[ \\t]*(\\d+)(?=[ \\t]|$)",
+      "captures": {
+        "1": { "name": "constant.numeric.line-number.jefferson" }
+      }
+    },
+    "overlap": {
+      "name": "punctuation.section.overlap.jefferson",
+      "match": "[\\[\\]]"
+    },
+    "intonation": {
+      "name": "keyword.operator.intonation.jefferson",
+      "match": "[↑↓]"
+    },
+    "analyst-arrow": {
+      "name": "keyword.control.analyst-arrow.jefferson",
+      "match": "→"
+    },
+    "latch": {
+      "name": "keyword.operator.latch.jefferson",
+      "match": "="
+    }
+  }
+}

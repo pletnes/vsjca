@@ -1,0 +1,20 @@
+Nan: plain speaker line
+1   Emma:  numbered speaker line
+12  →   Nan:  numbered and arrowed speaker line
+??: unknown speaker label
+(.)
+(0.7)
+(2)
+(15.0)
+(h)
+(hhh)
+(   )
+((phone rings))
+((comment containing (0.7) and = and [ which must stay comment))
+((first)) then ((second))
+7       (2.8)
+→       (0.7)
+Nan:  it wz (.) quite the thi(h)ng=
+Emma: =[yeah:
+Nan:   [↑we:ll↓ okay
+no::: this line starts with a stretch not a speaker label
