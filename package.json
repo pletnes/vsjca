@@ -1,0 +1,44 @@
+{
+  "name": "jefferson-ca",
+  "displayName": "Jefferson CA",
+  "description": "Syntax highlighting for Jefferson-notation Conversation Analysis transcripts",
+  "version": "0.0.1",
+  "publisher": "TODO-decide-publisher-id",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pletnes/vsjca"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jefferson",
+        "aliases": ["Jefferson CA", "Jefferson"],
+        "extensions": [".jca"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jefferson",
+        "scopeName": "source.jefferson",
+        "path": "./syntaxes/jefferson.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "vscode-tmgrammar-snap \"tests/**/*.jca\"",
+    "test:update": "vscode-tmgrammar-snap \"tests/**/*.jca\" --updateSnapshot",
+    "fmt": "prettier --write \"**/*.{json,md}\"",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0",
+    "prettier": "^3.0.0",
+    "vscode-tmgrammar-test": "^0.1.3"
+  }
+}

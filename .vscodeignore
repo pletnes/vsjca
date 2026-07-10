@@ -1,0 +1,9 @@
+.vscode/**
+.gitignore
+.prettierignore
+docs/**
+tests/**
+samples/**
+node_modules/**
+*.vsix
+CLAUDE.md
