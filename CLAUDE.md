@@ -25,6 +25,9 @@ A VS Code extension providing **syntax highlighting for Jefferson notation** (Co
 - Tests: `vscode-tmgrammar-test` for grammar snapshot tests; `@vscode/test-electron` only when runtime code exists.
 - Formatting: Prettier defaults. No debates.
 - Grammar lives in `syntaxes/jefferson.tmLanguage.json`. Keep scope names TextMate-conventional (`punctuation.definition.*`, `markup.*`, `constant.*`) so all themes color them sensibly.
+- Documentation is, generally, in `docs/**`
+- Documentation of Jefferson Transcription System, JTS, is in `docs/jefferson`
+- Planning documents are in `docs/planning/*.md`
 
 ## Jefferson notation reference (canonical for this repo)
 
